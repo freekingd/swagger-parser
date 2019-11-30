@@ -1,0 +1,11 @@
+version: '2'
+services:
+  swagger_parser-postgresql:
+    image: postgres:11.5
+    # volumes:
+    #     - ~/volumes/jhipster/swagger_parser/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=swagger_parser
+      - POSTGRES_PASSWORD=
+    ports:
+      - 5432:5432
